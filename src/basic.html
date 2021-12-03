@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+
+    <div id="mydiv"></div>
+
+    <script type="text/babel">
+      function Hello(props) {
+        return(
+          <div>
+            <h1>My First React Project</h1>
+            <h2>This is the second heading</h2>
+            <p>Here is a paragraph tag writting in <b>JSX</b>. Don't forget that all markup must be wrapped in a top element or &lt;&gt;&lt;/&gt; or &lt;Fragment&gt;&lt;/Fragment&gt; which renders a blank wrapper</p>
+          </div>
+        );
+      }
+
+      ReactDOM.render(<Hello />, document.getElementById('mydiv'))
+    </script>
+
+  </body>
+</html>
